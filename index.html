@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13018,7 +13018,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -13072,14 +13072,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13111,7 +13111,7 @@ div#notebook {
     <!-- End of mathjax configuration -->
 
 <style type="text/css">
-    
+
 /* no local copies of fontawesome fonts in basic templates, so use cdn */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)
 
@@ -13198,8 +13198,8 @@ div.cell {
   border-width: 5px 2px 2px 4px;
 }
 
-.chb div:hover, 
-.chb .chb-hover, 
+.chb div:hover,
+.chb .chb-hover,
 .jupyter-soft-selected .chb div{
     border-color:  #42A5F5;
     border-left-color: transparent;
@@ -14346,7 +14346,7 @@ div.cell {
 
     </script>
 <script type="text/javascript">
-    
+
 $(document).ready(function () {
     require(['nbextensions/collapsible_headings/main'], function (ch) {
         ch.set_collapsible_headings_options({});
@@ -14401,7 +14401,7 @@ Integrated Science and Applications Branch, U.S. Geological Survey</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The primary objective of the SAWG scoping document is to provide a comprehensive review of published literature on the topic of snow albedo indexed in digital libraries (e.g. SCOPUS, IEEE Xplore, Web of Science, JSTOR,  PubMed, and Springer), synthesize and map the results, and identify key knowledge gaps. The methods to evaluate a discipline-focused analysis requires researchers to organize, read, and provide meta-analysis  on the body of literature - a process that requires a considerable investment of human capital [1]. Machine Learning, specifically NLP, expedites the process, organizes the results, and provides a replicable framework for similar or continuing efforts. An NLP analysis also has the ability to extract geographic locations of a study area or field region, which for Earth science research is particularly applicable. This facilitates the  identification of regions and snow types where the state of knowledge in snow albedo science is missing (i.e. Andes, Atlas, low latitude regions).</p>
-<p>An NLP approach automates the process of a literature review programatically by interpreting the meaning of text by a machine. Incorporating NLP into analyses of literature reviews is well documented in biomedical research [2,3,4], but to date has been underutilized in the Earth Sciences.</p>
+<p>An NLP approach automates the process of a literature review programmatically by interpreting the meaning of text by a machine. Incorporating NLP into analyses of literature reviews is well documented in biomedical research [2,3,4], but to date has been underutilized in the Earth Sciences.</p>
 
 </div>
 </div>
@@ -14434,7 +14434,7 @@ Integrated Science and Applications Branch, U.S. Geological Survey</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Geospatial indexing provided a means to organize, aggregate, and analyze the NLP results at multiple scales. We used three distinct hierarchical scales for the NLP results that represent differing levels of geospatial clarity extracted from the NLP analysis. We applied the open-source H3 framework to transform latitude and longitude into a unique index that can be redrawn at 16 spatial resolutions (<a href="https://h3geo.org/docs/">https://h3geo.org/docs/</a>). Originally developed by Uber,  H3 is hierarchical, facilitating single maps to be drawn at multiple resolutions. The results of the NLP were mapped at three H3 hierarchical resolutions, (2,3,4) based upon the geographic detail provided by the NLP results (Table 1). For example, in the case of snow albedo, the resolution of the Longyearbyen glacier would be at a higher level of spatial detail (small hexagons), and its parent, Svalbard, would be rendered at a more coarse resolution. Each hexagon is color coded on the map to show the frequency of each location.  Each hexagon can be clicked inside Jupyter Notebook, and a popup will appear showing exact counts.</p>
-<p>The mapping framework is designed to automatically add to count of a location's parent hexagon (if there is already a hexagon with a matching name).  For example, if there were 3 occurrences of "Colorado" from the NLP results, and the assigned parent location is "United States", then a value of 3 would be added to the hexagon labeled "United States".</p>
+<p>The mapping framework is designed to automatically add to the count of a location's parent hexagon (if there is already a hexagon with a matching name).  For example, if there were 3 occurrences of "Colorado" from the NLP results, and the assigned parent location is "United States", then a value of 3 would be added to the hexagon labeled "United States".</p>
 <p>Table 1 - Explanation of H3 Hierarchies</p>
 <table>
 <thead><tr>
@@ -14475,8 +14475,8 @@ Integrated Science and Applications Branch, U.S. Geological Survey</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The NLP analysis identified 1,255 published articles for this testbed analysis that matched the list of keywords developed by the SAWG. While the analysis focused on the article’s abstract and conclusion, not all publications were readable by the NLP algorithms. In these articles 553 (42%) of the abstracts were readable, and 419 (33%) of the conclusions were readable. A blank in the abstract or conclusion indicates the paper did not have such a section or the related information is unable to be distinguished from normal text. 
-Identifying and extracting the geographic location of a study was completed in 395 (31%) of the articles using the Stanford NERT and geography3 algorithms. Null or blank results represent articles that did not have a location in either abstract or conclusion, or had a location that was not recognizable by the NLP analysis. To actually map these results, required manual enhancement of the outputs, looking through the publications, and adding locational data to the geographic extraction. This increased the number of mappable locations to 480.</p>
+<p>The NLP analysis identified 1,255 published articles for this testbed analysis that matched the list of keywords developed by the SAWG. While the analysis focused on the article’s abstract and conclusion, not all publications were readable by the NLP algorithms. In these articles 553 (42%) of the abstracts were readable, and 419 (33%) of the conclusions were readable. A blank in the abstract or conclusion indicates the paper did not have such a section or the related information is unable to be distinguished from normal text.
+Identifying and extracting the geographic location of a study was completed in 395 (31%) of the articles using the Stanford NERT and geography3 algorithms. Null or blank results represent articles that did not have a location in either abstract or conclusion, or had a location that was not recognizable by the NLP analysis. To actually map these results required manual enhancement of the outputs, looking through the publications, and adding locational data to the geographic extraction. This increased the number of mappable locations to 480.</p>
 
 </div>
 </div>
@@ -14494,14 +14494,14 @@ Identifying and extracting the geographic location of a study was completed in 3
 <p>Of the 1,255 articles that were identified by the NLP and geographic analysis based upon key words and resulting articles provided varying degrees of relevance. For example, an article such as:</p>
 <blockquote><p><em>Black Carbon Aerosols in Arctic Snow and Implications for Albedo Change</em></p>
 </blockquote>
-<p>is highly related to the goals of the SAWG, and this article returned both an abstract and conclusion. Geographically, Svalbard (Artic) and Mt Zeppelin (Antarctic) were identified as study locations. 
+<p>is highly related to the goals of the SAWG. This article returned both an abstract and conclusion. Geographically, Svalbard (Artic) and Mt Zeppelin (Antarctic) were identified as study locations.
 However, some articles were less relevant, such as:</p>
 <blockquote><p><em>Ultrafine grained bulk steel produced by accumulative roll bonding ARB process</em></p>
 </blockquote>
-<p>This article is relevant to material sciences, but not snow albedo. 
+<p>This article is relevant to material sciences, but not snow albedo.
 Similarly, some of the study areas that were extracted contain terms that are not locations. For example the Stanford NLP package and geography3 both identified El Niño as location and geography3 identified MODIS as location.</p>
-<p>A comprehensive evaluation of the relevance of the 1,255 results was not completed as part of this test bed study, but does identify the reality that NLP analyses should be augmented by humans when working in this cryospheric sciences domain.</p>
-<p>These results were organized in a csv file and published on GitHub (<a href="https://github.com/ESIPFed/Snow-Albedo-Mapping">https://github.com/ESIPFed/Snow-Albedo-Mapping</a>).  An interactive map of the NLP results and resultant cluster analysis are provided below, and will be hosted and maintained by Dr. Eric Sproles at Montana State University.</p>
+<p>A comprehensive evaluation of the relevance of the  need for NLP analyses to be augmented by humans when wimplemented in the cryospheric sciences domain.</p>
+<p>Results were organized in a csv file and published on GitHub (<a href="https://github.com/ESIPFed/Snow-Albedo-Mapping">https://github.com/ESIPFed/Snow-Albedo-Mapping</a>).  An interactive map of the NLP results and resultant cluster analysis are provided below, and will be hosted and maintained by Dr. Eric Sproles at Montana State University.</p>
 
 </div>
 </div>
@@ -14551,13 +14551,13 @@ Similarly, some of the study areas that were extracted contain terms that are no
         <span class="bp">self</span><span class="o">.</span><span class="n">parent_grid</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">sub_grid</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">hexagons</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generate_grid</span><span class="p">()</span>
-        
+
     <span class="k">def</span> <span class="nf">generate_grid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># Returns a list of Hexagon objects</span>
         <span class="n">hex_locations</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Keeps track of hex locations already counted</span>
         <span class="n">hex_grid</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># list of Hexagon objects to be returned</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="p">)):</span>
-            <span class="n">location</span> <span class="o">=</span> <span class="n">h3</span><span class="o">.</span><span class="n">geo_to_h3</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;latitude&#39;</span><span class="p">],</span> 
-                                              <span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;longitude&#39;</span><span class="p">],</span> 
+            <span class="n">location</span> <span class="o">=</span> <span class="n">h3</span><span class="o">.</span><span class="n">geo_to_h3</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;latitude&#39;</span><span class="p">],</span>
+                                              <span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;longitude&#39;</span><span class="p">],</span>
                                               <span class="bp">self</span><span class="o">.</span><span class="n">resolution</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">location</span> <span class="ow">in</span> <span class="n">hex_locations</span><span class="p">:</span> <span class="c1"># Add to weight of existing hexagon</span>
                 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">hex_grid</span><span class="p">:</span>
@@ -14568,7 +14568,7 @@ Similarly, some of the study areas that were extracted contain terms that are no
                 <span class="n">hexagon</span> <span class="o">=</span> <span class="n">Hexagon</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">location</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">geo_locs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;parent&#39;</span><span class="p">])</span>
                 <span class="n">hex_grid</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hexagon</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">hex_grid</span>
-    
+
     <span class="k">def</span> <span class="nf">set_sub_grid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sub_grid</span><span class="p">):</span>
         <span class="c1"># Increase weights of this grid by amount in sub_grid</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">sub_grid</span> <span class="o">=</span> <span class="n">sub_grid</span>
@@ -14608,12 +14608,12 @@ Similarly, some of the study areas that were extracted contain terms that are no
         <span class="n">weights</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hexagon</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
     <span class="n">color_breaks</span> <span class="o">=</span> <span class="n">jenkspy</span><span class="o">.</span><span class="n">jenks_breaks</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">nb_class</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">color_scheme</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">color_breaks</span>
-    
+
 <span class="k">def</span> <span class="nf">plot_map</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">color_scheme</span><span class="p">):</span>
     <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-                     <span class="n">tiles</span> <span class="o">=</span> <span class="s1">&#39;Stamen Terrain&#39;</span><span class="p">,</span> 
-                     <span class="n">attr</span> <span class="o">=</span> <span class="s2">&quot;&lt;a href=https://endless-sky.github.io/&gt;Endless Sky&lt;/a&gt;&quot;</span><span class="p">,</span> 
-                     <span class="n">zoom_start</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> 
+                     <span class="n">tiles</span> <span class="o">=</span> <span class="s1">&#39;Stamen Terrain&#39;</span><span class="p">,</span>
+                     <span class="n">attr</span> <span class="o">=</span> <span class="s2">&quot;&lt;a href=https://endless-sky.github.io/&gt;Endless Sky&lt;/a&gt;&quot;</span><span class="p">,</span>
+                     <span class="n">zoom_start</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
                      <span class="n">overlay</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
                      <span class="n">show</span> <span class="o">=</span> <span class="kc">True</span>
                   <span class="p">)</span>
@@ -14624,9 +14624,9 @@ Similarly, some of the study areas that were extracted contain terms that are no
         <span class="k">for</span> <span class="n">hexagon</span> <span class="ow">in</span> <span class="n">grid</span><span class="o">.</span><span class="n">hexagons</span><span class="p">:</span>
             <span class="n">hex_color</span> <span class="o">=</span> <span class="n">color_map</span><span class="o">.</span><span class="n">rgb_hex_str</span><span class="p">(</span><span class="n">hexagon</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
             <span class="n">hex_vertices</span> <span class="o">=</span> <span class="n">h3</span><span class="o">.</span><span class="n">h3_to_geo_boundary</span><span class="p">(</span><span class="n">hexagon</span><span class="o">.</span><span class="n">hex_coordinate</span><span class="p">)</span>
-            <span class="n">folium</span><span class="o">.</span><span class="n">Polygon</span><span class="p">(</span><span class="n">locations</span> <span class="o">=</span> <span class="n">hex_vertices</span><span class="p">,</span> 
-                           <span class="n">popup</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;&quot;</span> <span class="o">+</span> <span class="n">hexagon</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/b&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">hexagon</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&lt;b&gt;Parent: &lt;/b&gt;&quot;</span> <span class="o">+</span> <span class="n">hexagon</span><span class="o">.</span><span class="n">parent_loc</span><span class="p">,</span> 
-                           <span class="n">fill_color</span> <span class="o">=</span> <span class="n">hex_color</span><span class="p">,</span> 
+            <span class="n">folium</span><span class="o">.</span><span class="n">Polygon</span><span class="p">(</span><span class="n">locations</span> <span class="o">=</span> <span class="n">hex_vertices</span><span class="p">,</span>
+                           <span class="n">popup</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;&quot;</span> <span class="o">+</span> <span class="n">hexagon</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/b&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">hexagon</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&lt;b&gt;Parent: &lt;/b&gt;&quot;</span> <span class="o">+</span> <span class="n">hexagon</span><span class="o">.</span><span class="n">parent_loc</span><span class="p">,</span>
+                           <span class="n">fill_color</span> <span class="o">=</span> <span class="n">hex_color</span><span class="p">,</span>
                            <span class="n">fill_opacity</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span>
                            <span class="n">weight</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
                            <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;#000000&#39;</span>
@@ -14641,19 +14641,19 @@ Similarly, some of the study areas that were extracted contain terms that are no
     <span class="n">datafields</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;parent&#39;</span><span class="p">,</span> <span class="s1">&#39;resolution&#39;</span><span class="p">]</span>
     <span class="n">nlp_geolocations</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">datafields</span><span class="p">)</span>
     <span class="n">hex_grids_list</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="c1"># Split geolocation data into unique resolutions (16 possible resolutions): </span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">):</span>
         <span class="n">split_df</span> <span class="o">=</span> <span class="n">nlp_geolocations</span><span class="p">[</span><span class="n">nlp_geolocations</span><span class="p">[</span><span class="s1">&#39;resolution&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">split_df</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
             <span class="n">hex_grid</span> <span class="o">=</span> <span class="n">HexagonGrid</span><span class="p">(</span><span class="s1">&#39;Resolution &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">split_df</span><span class="p">)</span>
             <span class="n">hex_grids_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hex_grid</span><span class="p">)</span>
-    
+
     <span class="c1"># Set sub grids:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hex_grids_list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">hex_grids_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_sub_grid</span><span class="p">(</span><span class="n">hex_grids_list</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
-        
-        
+
+
     <span class="c1"># Plot map:</span>
     <span class="n">m</span> <span class="o">=</span> <span class="n">plot_map</span><span class="p">(</span><span class="n">hex_grids_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color_scheme</span><span class="p">)</span> <span class="c1"># Color scheme: [Green, Yellow, Red]</span>
     <span class="n">display</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -14713,7 +14713,7 @@ Similarly, some of the study areas that were extracted contain terms that are no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The project provided a first pass to test the efficacy of an NLP to generate a meta-analysis  of the snow albedo literature. While informative, the results do not provide a definitive analysis of the corpus of snow albedo research. On the other hand, the geolocational analysis was informative, but could not definitively identify all of the geographic locations in the study. These testbed results provide a foundation from which the SAWG will build upon moving forward. A series of ideas and suggestions is provided subsequently.</p>
+<p>The project provided a first pass to test the efficacy of an NLP to generate a meta-analysis  of the snow albedo literature. While informative, the results do not provide a definitive analysis of the corpus of snow albedo research. On the other hand, the geolocational analysis was informative, but could not definitively identify all of the geographic locations in the study. These testbed results provide a foundation on which the SAWG will build upon in future work.</p>
 
 </div>
 </div>
@@ -14728,9 +14728,9 @@ Similarly, some of the study areas that were extracted contain terms that are no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A means to potentially improve the NLP analysis with regards to snow albedo is to refine the set of keywords more methodically. The set of words applied in this study was more of a “group think” exercise than a list that was vetted against publications (e.g. The Cryosphere, Water Resources Research, etc). An enhanced keyword list could potentially select a more reflective body of snow albedo literature, and thus increase the number of publications selected.</p>
-<p>The Stanford NERT code applied in this project was not customized for this test bed project. Augmenting the code to specifically target snow science research provides potential opportunities for more robust results that identify published articles and extracting relevant information. These potential improvements would require a programmer skilled in NLP and additional funding support.</p>
-<p>Geographically, both the Stanford and geograph3 geolocational packages did not provide robust results. One of the primary reasons is that both packages are developed to look for more common place names, such as a country, region, or city. These packages are not set up for locations that are more scientifically esoteric, such as Niwot Ridge, HJ Andrews Experimental Forest, or Central Sierra Snow Lab. Thus, even though these locations are embedded in the abstract or conclusion, they are not recognized by the geographic packages. A potential means to address this deficiency would be to create a Look Up Table (LUT) of potential sites for a geolocational package to reference. One of the inherent downsides of developing such a LUT is that it would be biased to established research locations, and potentially not identify newer sites.</p>
+<p>One way to improve the NLP analysis, is to more methodically refine the set of snow albedo keywords. The set of keywords applied in this study was more of a SAWG “group think” exercise rather than a list of keywords that was vetted against publications (e.g. The Cryosphere, Water Resources Research, etc). An enhanced keyword list could potentially select a more reflective body of snow albedo literature thus increasing the number of relevant publications selected. </p>
+<p>The Stanford NERT code applied in this project was not customized for this test bed project. Augmenting the code to specifically target snow science research provides potential opportunities for more robust results that identify published articles and extracting relevant information. Such improvements would require a programmer skilled in NLP and additional funding support.</p>
+<p>Geographically, both the Stanford and geograph3 geolocational packages did not provide robust results. One of the primary reasons is that both packages are developed to look for more common place names, such as a country, region, or city. These packages are not set up for locations with scientific/technical names , such as Niwot Ridge LTER, HJ Andrews Experimental Forest, or Central Sierra Snow Lab. Even though these locations are embedded in the abstract or conclusion, they are not recognized by the geographic packages. One way to address this deficiency would be to create a look-up table (LUT) of scientific place names  for a geolocational package to reference. One of the inherent downsides of developing such a LUT is that it would be biased to established research locations, and potentially not identify newer sites. </p>
 
 </div>
 </div>
@@ -14760,7 +14760,9 @@ Similarly, some of the study areas that were extracted contain terms that are no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The H3 framework provides an effective means of mapping the nested geolocational information associated with a meta-analysis  of field-based science. This approach could be augmented in the future with more detailed attribute information that are associated with each mapped location. This would allow results to be filtered by topic (i.e. dust on snow) or location (i.e. Spain).</p>
+<p>The H3 framework provides an effective means of mapping the nested geolocational information associated with a meta-analysis  of field-based science. This approach could be augmented in the future with more detailed attribute information that is associated with each mapped location. This would allow results to be filtered by topic (i.e. dust on snow) or location (e.g., Spain).</p>
+
+<p>It is highly recommended that authors publishing research in scientific journals include a field or geo-locational component when relevant. A simple (lat,lon) in the abstract would allow articles to readily be geolocated through an NLP, and not rely on geolocation after the NLP analysis. Understandably authors need to be economical in their word useage, however this approach will make one's work more readily findable geographically.</p>
 
 </div>
 </div>
@@ -14775,7 +14777,7 @@ Similarly, some of the study areas that were extracted contain terms that are no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This test bed study identified the strengths and weaknesses of using NLP for a meta-analysis  of the snow albedo literature. The ability of the NLP to process over 1300 published articles in a fraction of the time that it would take a human and streamline the task of reviewing thousands of journal articles is a strength. However, the inability of the NLP analysis to fully filter only for relevant publications is a weakness. Geolocational extraction of each publication was incomplete and required an augmentation of locational names and processing.</p>
+<p>This test bed study identified the strengths and weaknesses of using NLP for a meta-analysis  of the snow albedo literature. The ability of the NLP to process over 1,300 published articles in a fraction of the time that it would take a human and streamline the task of reviewing thousands of journal articles is a strength. However, the inability of the NLP analysis to fully filter only for relevant publications is a weakness. Geolocational extraction of each publication was incomplete and required an augmentation of locational names and processing.</p>
 <p>Based upon our results and experiences, the application of an NLP analysis is a positive first phase for a machine learning meta-analysis . Even so, it is critical that the pre-processing and NLP results are evaluated by experienced domain scientists. It should also be expected that there would be a considerable investment of post-processing to interpret the results.<br>
 Additionally, we did not conduct a precision or accuracy assessment, in that we quantify the number of True Positives, False Positives, False Negatives, and True Negatives. Doing so in subsequent studies would better frame how complete (or incomplete) the results of an NLP analysis.</p>
 
@@ -14792,7 +14794,7 @@ Additionally, we did not conduct a precision or accuracy assessment, in that we 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The integration of Data and Earth Science is the foundation of ESIP, and this project integrates open-source approaches to NLP and spatial analysis. We present modern workflows, that while not perfect, do advance domain and data science. While the scope of this research focuses on snow albedo, a targeted Designated Observable, it will also be readily adaptable to assess other themes in the scientific literature.</p>
+<p>The integration of Data and Earth Science is the foundation of ESIP, and this project integrates open-source approaches to NLP and spatial analysis. We present modern workflows that, while not perfect, will advance domain and data science. While the scope of this research focuses on snow albedo, a Designated Observable in the Decadal Survey (REF), it will also be readily adaptable to assess other themes in the scientific literature.</p>
 
 </div>
 </div>
@@ -14811,7 +14813,7 @@ Additionally, we did not conduct a precision or accuracy assessment, in that we 
 <p>[2] Pons, Ewoud, et al. "Natural language processing in radiology: a systematic review." Radiology 279.2 (2016): 329-343.</p>
 <p>[3] Kreimeyer, Kory, et al. "Natural language processing systems for capturing and standardizing unstructured clinical information: a systematic review." Journal of biomedical informatics 73 (2017): 14-29.</p>
 <p>[4] Wang, Yanshan, et al. "A comparison of word embeddings for the biomedical natural language processing." Journal of biomedical informatics 87 (2018): 12-20.</p>
-<p>[5] Jenny Rose Finkel, Trond Grenager, and Christopher Manning. 2005. Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling. Proceedings of the 43nd Annual Meeting of the Association for Computational Linguistics (ACL 2005), pp. 363-370. <a href="http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf">http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf</a></p>
+<p>[5] Jenny Rose Finkel, Trond Grenager, and Christopher Manning. 2005. Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling. Proceedings of the 43nd Annual Meeting of the Association for Computational Linguistics (ACL 2005), pp. 363-370. <a href="http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf">http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf.</a></p>
 
 </div>
 </div>
@@ -14820,7 +14822,7 @@ Additionally, we did not conduct a precision or accuracy assessment, in that we 
   </div>
 </body>
 
- 
+
 
 
 </html>
